@@ -1,0 +1,360 @@
+@font-face {
+  font-family: 'GmarketSansMedium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+    background: black;
+}
+body {
+  margin: 0%;
+  }
+
+img {
+  max-width: 100%;
+}
+
+nav{
+  font-family: 'GmarketSansMedium';
+  color: white;
+  font-size: 1.3rem;
+  background-color: black; 
+	overflow: hidden; 
+	text-align: right;
+	padding: 10px;
+
+  transition: transform 0.3s ease-in-out;
+  padding-right: 10%;
+}
+
+nav a {
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	display: inline-block;
+  text-decoration: none;
+}
+
+nav a:hover {
+	transform: scale(1.2);
+}
+
+.blink {
+  text-align: center;
+  position: absolute;
+  animation: blink 2s linear infinite;
+  width:100%;
+  top: 4%;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.main {
+  text-align: center;
+  position: relative;
+}  
+
+.moveimg1 {
+  text-align: center;
+  position: absolute;
+	top: 0;
+	left: 0;
+	animation: move 5s infinite linear;
+  padding-top: 25%;
+	}
+
+.moveimg2 {
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: move 6s infinite linear;
+  padding-top: 950px;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(2000px);
+  }
+}
+
+.yellowbox {
+  text-align: center;
+  padding-top: 180px;
+}
+
+.example {
+  text-align: center;
+  padding-top: 200px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 70px;
+  
+}
+
+section {
+  margin: 0;
+}
+
+.a {
+  width: 500px;
+  margin: 0px auto;
+  position: relative
+}
+.c {
+  width: 500px;
+  margin: 0px auto;
+  position: relative
+}
+.e {
+  width: 500px;
+  margin: 0px auto;
+  position: relative
+}
+.b,.d,.f {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: none;
+  width: 500px;
+}
+.a:hover .b {
+  display: block;
+}
+.c:hover .d {
+  display: block;
+}
+.e:hover .f {
+  display: block;
+}
+
+.text1 {
+  text-align: center;
+  padding-left: 500px;
+  padding-top: 140px;
+}
+
+.text2 {
+  text-align: center;
+  padding-right: 500px;
+  padding-top: 160px;
+  padding-left: 300px;
+  padding-bottom: 200px;
+  display: block;
+}
+
+.kit{
+  text-align: center;
+  padding-top: 100px;
+  display: block;
+  height: auto;
+}
+
+.manual{
+  text-align: center;
+}
+
+.find{
+  font-family: 'Tenada';
+  color: #FFE000;
+  font-size: 1.5rem;
+}
+
+.container2{
+  text-align: center;
+  position: relative;
+  padding-top: 150px;
+}
+
+.eximg1{
+  text-align: center;
+}
+
+.mouse, .usb, .glasses { 
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.3s ease-in-out;
+}
+.mouse{
+  position: absolute;
+  width: 13%;
+  top: 1000px;
+  left: 74%;
+}
+.usb{
+  position: absolute;
+  width: 13%;
+  top: 900px;
+  left: 63%;
+}
+.glasses{
+  position: absolute;
+  width: 26%;
+  top: 50%;
+  left: 7%;
+}
+.mouse:hover {
+  transform: scale(1.2);
+}
+
+.usb:hover {
+  transform: scale(1.2);
+}
+
+.glasses:hover {
+ 
+  transform: scale(1.2);
+}
+
+.clear {
+    text-align: center;
+    position: relative;
+    text-align: center;
+    padding-top: 230px;
+}  
+
+.blink2 {
+    text-align: center;
+    position: absolute;
+    animation: blink 2s linear infinite;
+    width:100%;
+    top: 4%;
+    padding-top: 250px;
+  }
+  
+  @keyframes blink {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+}
+
+.yellowbox2 {
+  position: relative;
+  width: 500px;
+  width: 100%;
+  padding-top: 80px;
+}
+
+.review {
+  width: 100%;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.reviewimg1 {
+  width: 90%;
+  position: absolute;
+  top: 65%;
+  right: 10px;
+  height: auto;
+
+  transform: translateY(-50%);
+  animation: slide 6s linear infinite;
+}
+
+@keyframes slide {
+  0% {
+    left: 200%;
+  }
+  100% {
+    left: -200px;
+  }
+}
+
+.reviewimg2{
+  width: 700px;
+  position: absolute;
+  top: 80px;
+  right: 10px;
+  height: auto;
+
+  transform: translateY(50%);
+  animation: slide 5s linear infinite;
+}
+
+@keyframes slide {
+  0% {
+    left: 120%;
+  }
+  100% {
+    left: -200px;
+  }
+}
+
+.reviewtext{
+  text-align: center;
+  padding-top: 400px;
+  padding-right: 68%;
+}
+
+.buyitnow{
+  text-align: center;
+}
+
+p{
+  text-align: center;
+  font-family: 'GmarketSansMedium';
+  color: white;
+  font-size: 2.5rem;
+  padding-top: 200px;
+}
+
+.button {
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  padding-top: 20px;
+}
+
+.button:hover {
+  transform: scale(1.1);
+}
+
+.point{
+  text-align: center;
+  font-family: 'GmarketSansMedium';
+  color: #FFE600;
+  font-size: 2rem;
+}
+
+h4{
+  text-align: center;
+  font-family: 'GmarketSansMedium';
+  color: white;
+  font-size: 1.3rem;
+}
+
+.footer{
+  padding-top: 200px;
+  padding-bottom: 140px;
+}
+
+.name {
+  color: #FFE000;
+}
